@@ -59,6 +59,7 @@
     <link href="./static/dist/components/text.css" type="text/css" rel="stylesheet"/>
     <link href="./static/dist/components/toast.css" type="text/css" rel="stylesheet"/>
     <link href="./static/dist/components/transition.css" type="text/css" rel="stylesheet"/>
+    <link href="./static/custom/led.css" type="text/css" rel="stylesheet"/>
     <script type="text/javascript" src="./static/dist/components/api.js"></script>
     <script type="text/javascript" src="./static/dist/components/api.js"></script>
     <script type="text/javascript" src="./static/dist/components/nag.js"></script>
@@ -88,6 +89,26 @@
     <title>vitrivr</title>
 </head>
 <body>
+
+	<div class="ui large inverted black secondary menu">
+		<i class="icon"></i>
+		<div class="ui dropdown icon item">
+			<i class="white sidebar icon"></i>
+			<div class="menu">
+				<a class="item" href="/home">
+					<i class="home icon"></i>
+					Navigation
+				</a>
+			</div>
+		</div>
+		<div class="led-container">
+		  <div class="led-box">
+			<div class="led-green">
+			</div>
+			<p>Vitrivr Classic</p>
+			 </div>
+		 </div>
+	</div>
     <div class="ui wide container">
         <div id="main_page" class="ui basic main segment">
 
@@ -128,5 +149,18 @@
       </div>
     </div>
 </div>
+<script>
+    function show() {
+        $('.ui.sidebar')
+            .sidebar('setting', 'transition', 'overlay')
+            .sidebar('toggle')
+        ;
+    }
+
+    $('.ui.dropdown')
+        .dropdown()
+    ;
+</script>
 </body>
 </html>
+
