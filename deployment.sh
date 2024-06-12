@@ -1,3 +1,6 @@
+
+
+
 # Setup Database
 git clone --depth 1 --branch p1-demo git@github.com:vitrivr/cottontaildb.git
 cd ./cottontaildb
@@ -30,10 +33,12 @@ cd ./feature-extraction-server
 python3.11 -m venv .venv
 source .venv/bin/activate
 python3.11 -m pip install --upgrade pip
-python3.11 -m pip install -r dev_requirements.txt
+sudo python3.11 -m pip install -r dev_requirements.txt
 
 
 #
+mkdir nginx
+cd ./nginx
 sudo apt install nginx
 
 # Setup UI 
