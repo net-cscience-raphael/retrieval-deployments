@@ -5,7 +5,9 @@
 git clone --depth 1 --branch p1-demo git@github.com:vitrivr/cottontaildb.git
 cd ./cottontaildb
 ./gradlew build
+./gradlew distTar
 cd ..
+mkdir database
 
 # Setup Cineast
 git clone --depth 1 --branch p1-demo git@github.com:vitrivr/cineast.git
