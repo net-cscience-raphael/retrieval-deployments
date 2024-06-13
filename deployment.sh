@@ -34,6 +34,9 @@ python3.11 -m venv .venv
 source .venv/bin/activate
 python3.11 -m pip install --upgrade pip
 sudo python3.11 -m pip install -r dev_requirements.txt
+sudo ./setup_dev_server.sh
+echo "export PYTHONPATH=src/core:src/legacy_api:src/audio_diarization:src/blip:src/conditional_image_captioning:src/face_embedding:src/image_captioning:src/optical_character_recognition:src/simple_plugin_manager:src/vit_gpt2:src/automated_speech_recognition:src/blip2:src/detr_resnet101:src/face_recognition:src/image_embedding:src/owl_vit_base_patch32:src/tesseract:src/whisper:src/base_api:src/clip_vit_large_patch14:src/easy_ocr:src/fastapi:src/object_detection:src/pyannote:src/text_embedding:src/zero_shot_image_classification:$PYTHONPATH" >> ~/.bashrc
+echo "export LOG_LEVEL=DEBUG" >> ~/.bashrc
 
 
 #
