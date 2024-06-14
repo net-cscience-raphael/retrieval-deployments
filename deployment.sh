@@ -52,7 +52,11 @@ sudo apt-get install apache2-utils
 # Setup UI 
 # ng
 git clone --depth 1 --branch p1-demo git@github.com:vitrivr/vitrivr-ng.git
+cd ./vitrivr-ng
+./gradlew buildAngularApp
 
 # ng-min
 git clone --depth 1 --branch p1-demo git@github.com:vitrivr/vitrivr-ng-min.git
+
+
 
