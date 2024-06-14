@@ -46,6 +46,8 @@ mkdir nginx
 cd ./nginx
 sudo apt install nginx
 
+sudo apt-get install apache2-utils
+
 # Setup UI 
 # ng
 git clone --depth 1 --branch p1-demo git@github.com:vitrivr/vitrivr-ng.git
