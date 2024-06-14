@@ -13,6 +13,7 @@ mkdir database
 git clone --depth 1 --branch p1-demo git@github.com:vitrivr/cineast.git
 cd ./cineast
 ./gradlew build
+./gradlew getExternalFiles cineast-runtime:shadowJar
 cd ..
 
 # Setup Engine
