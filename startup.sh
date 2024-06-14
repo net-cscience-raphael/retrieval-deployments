@@ -1,3 +1,5 @@
+tmux
+
 cd ~/retrieval-deployments
 
 # Restart nginx
@@ -6,5 +8,14 @@ cd ~/retrieval-deployments
 sudo pkill -f nginx & wait $!
 sudo nginx  -c /home/dbisadmin/retrieval-deployments/retrieval-deployments/config/nginx/nginx.conf
 
+
 cd ~/retrieval-deployments
 ./cottontaildb/cottontaildb-full/bin/cottontaildb ./retrieval-deployments/config/cottontail/config.json
+
+tmux split-window 
+
+cd ~/retrieval-deployments
+./cottontaildb/cottontaildb-full/bin/carrotli
+
+tmux split-window 
+
