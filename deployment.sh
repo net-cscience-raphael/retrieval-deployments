@@ -55,6 +55,19 @@ git clone --depth 1 --branch p1-demo git@github.com:vitrivr/vitrivr-ng.git
 cd ./vitrivr-ng
 ./gradlew buildAngularApp
 
+sudo apt install npm
+sudo apt install ng-common
+sudo apt purge ng-common ng-latin
+sudo npm install -g @angular/cli
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+
+ng update
+npm run gen-local-api
+ng build
+
+
 # ng-min
 git clone --depth 1 --branch p1-demo git@github.com:vitrivr/vitrivr-ng-min.git
 
